@@ -48,7 +48,10 @@ namespace Play.Catalog.Service
 
             services.AddSingleton<IItemsRepository, ItemsRepository>();
 
-            services.AddControllers();
+            services.AddControllers(options =>
+            {
+                options.SuppressAsyncSuffixInActionNames = false;
+            });
             
             services.AddSwaggerGen(c =>
             {
