@@ -2,9 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using MongoDB.Driver;
-using Play.Catalog.Service.Entities;
 
-namespace Play.Catalog.Service.Repositories
+namespace Play.Common.MongoDB
 {
     public class MongoRepository<T> : IRepository<T> where T : IEntity
     {

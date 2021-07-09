@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Play.Catalog.Service.Entities;
 
-namespace Play.Catalog.Service.Repositories
+namespace Play.Common
 {
     public interface IRepository<T> where T : IEntity
     {
